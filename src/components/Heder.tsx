@@ -65,7 +65,6 @@ export default function Heder() {
 
                 <button className='dropDownMenuBtn' onClick={() => {
                     setDropDownMenu1(!dropDownMenu1)
-                    setCloseAndMenu(!closeAndMenu)
                 }}>
                     {closeAndMenu ? <Close /> : <Menu />}
                 </button>
