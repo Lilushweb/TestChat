@@ -41,7 +41,7 @@ const Chat: FC = () => {
             console.error('Ошибка при отправке сообщения:', err);
         }
     };
-
+    console.log(messages, textInput)
 
 
 

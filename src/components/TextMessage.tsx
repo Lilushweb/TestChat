@@ -8,17 +8,20 @@ interface MessageProps {
 }
 
 const TextMessage: React.FC<MessageProps> = ({ message }) => {
-    const [displayedText, setDisplayedText] = useState('');
+    const [displayedText, setDisplayedText] = useState<string>('');
 
     useEffect(() => {
         let index = 0;
-        const interval = setInterval(() => {
-            setDisplayedText((prev) => prev + message.content.charAt(index));
-            index += 1;
 
-            if (index === message.content.length) {
+        const interval = setInterval(() => {
+            if (index < message.content.length) {
+                setDisplayedText(message.content.substring(0, index + 1));
+                index++;
+
+            } else {
                 clearInterval(interval);
             }
+
         }, 100);
 
         return () => clearInterval(interval);
