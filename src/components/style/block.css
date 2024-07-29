@@ -1,0 +1,32 @@
+.block {
+    width: 410px;
+    height: 260px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 12px;
+    padding: 20px;
+    background: radial-gradient(162.01% 151.63% at 17% -48%, rgba(28, 100, 242, 0.38) 9.339%, rgba(0, 0, 0, 0) 100%), rgb(18, 24, 37);
+}
+
+
+.h {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffff;
+    text-align: left;
+}
+
+.blockText {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (max-width: 450px) {
+    .block {
+        width: 78vw;
+        height: 260px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,11 @@
+.productsCongener {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.products {
+    color: rgb(97, 109, 141);
+    font-size: 16px;
+    font-weight: 600;
+}

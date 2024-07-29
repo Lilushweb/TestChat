@@ -1,0 +1,236 @@
+main {
+    z-index: 6;
+}
+
+.titleBlock {
+
+    position: absolute;
+    top: 199px;
+    left: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.textGpt {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.gpt {
+    width: 500px;
+    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.start {
+    width: 172px;
+    height: 52px;
+    border-radius: 8px;
+    margin: 0;
+    background: rgb(28, 100, 242);
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.ellipse3 {
+    position: absolute;
+    width: 455px;
+    height: 296px;
+    left: 643px;
+    top: 252px;
+    filter: blur(214.3px);
+    background: rgba(86, 26, 184, 0.43);
+    opacity: 1;
+    mix-blend-mode: normal;
+    z-index: 0;
+}
+
+.ellipse4 {
+    position: absolute;
+    width: 455px;
+    height: 201px;
+    left: 465px;
+    filter: blur(214.3px);
+    background: rgba(16, 63, 231, 0.77);
+    top: 275px;
+    opacity: 1;
+    mix-blend-mode: normal;
+    z-index: 0;
+}
+
+.ellipse5 {
+    position: absolute;
+    width: 455px;
+    height: 129px;
+    left: 799px;
+    top: 286px;
+    filter: blur(214.3px);
+    background: rgba(255, 30, 232, 0.89);
+    opacity: 1;
+    mix-blend-mode: normal;
+    z-index: 0;
+}
+
+.OurCapabilities {
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+.photoAiContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 120px;
+
+
+}
+
+.hAiPhoto {
+    color: rgb(255, 255, 255);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0%;
+    text-align: left;
+
+}
+
+.containerTextAi {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.midJourneyBtn {
+    width: 210px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgb(28, 100, 242);
+}
+
+.gptInfo {
+    width: 500px;
+}
+
+.midJourneyText {
+    font-size: 16px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .imgAi {
+        width: 400px;
+        height: 400px;
+    }
+
+    .titleBlock {
+        left: 6vw;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .imgAi {
+        width: 330px;
+        height: 300px;
+    }
+
+    .photoAiContainer {
+        flex-direction: column;
+        gap: 40px;
+
+
+    }
+
+    .titleBlock {
+        left: 2vw;
+    }
+
+}
+
+@media (max-width: 530px) {
+    .titleBlock {
+        left: 1vw;
+        justify-content: start;
+    }
+
+    .gpt {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 450px) {
+    span {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .gpt {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .containerTextAi {
+        width: 300px;
+    }
+
+    .ellipse3 {
+        left: 43px;
+        top: 852px;
+    }
+
+    .ellipse4 {
+        left: 65px;
+        top: 575px;
+    }
+
+    .ellipse5 {
+        left: 99px;
+        top: 686px;
+    }
+}

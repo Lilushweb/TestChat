@@ -1,0 +1,16 @@
+.capabilities {
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 450px) {
+    .capabilities {
+        margin-bottom: 40px;
+        gap: 15px;
+    }
+}

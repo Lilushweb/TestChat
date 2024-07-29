@@ -1,0 +1,389 @@
+.chat {
+
+    width: 741px;
+    height: 592px;
+    border-radius: 24px;
+    background: rgb(18, 24, 37);
+    z-index: 10;
+    overflow-x: hidden;
+
+}
+
+
+.send {
+    z-index: 18;
+    position: absolute;
+    left: 61.5vw;
+    top: 515px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: rgb(28, 100, 242);
+}
+
+.chatInput {
+    position: absolute;
+    left: 554px;
+    top: 500px;
+    width: 673px;
+    height: 66px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid rgb(49, 62, 98);
+    border-radius: 10px;
+    z-index: 17;
+    background: rgb(18, 24, 37);
+    color: rgb(255, 255, 255);
+    font-family: "IBM Plex Sans", sans-serif;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+
+
+.ellipseContener {
+    position: relative;
+    width: 255px;
+    height: 138px;
+}
+
+.headChat {
+
+    height: 82px;
+    display: flex;
+    flex-direction: row;
+    z-index: 18;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(55, 65, 81);
+    backdrop-filter: blur(16px);
+    background: rgba(18, 24, 37, 0.7);
+    border-radius: 24px 24px 0 0;
+}
+
+.robot {
+    margin-left: 20px;
+    height: 2.5vw;
+    width: 2.5vw;
+}
+
+.infoBot {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameBot {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+}
+
+.whatBot {
+    color: #616D8D;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.checkboxSave {
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+.aiMessage {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.chat-messageai {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+}
+
+
+
+
+@keyframes cursor {
+    0% {
+        border-color: rgb(0, 0, 0);
+    }
+
+    50% {
+        border-color: rgb(0, 0, 0);
+    }
+
+    100% {
+        border-color: rgb(0, 0, 0);
+    }
+}
+
+@keyframes printed_text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: fit-content;
+    }
+}
+
+.chat-messageai p {
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(40, 160, 140);
+    width: fit-content;
+    border-right: 2px solid white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 25px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    animation: cursor 0.75s step-end infinite, printed_text 5s steps(auto)
+}
+
+.chat-messageuser {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+.chat-messageuser p {
+    width: fit-content;
+
+
+    color: #ffffff;
+    font-family: "IBM Plex Sans", sans-serif;
+    z-index: 15;
+    background: #1C64F2;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    overflow: hidden;
+    display: inline-block;
+    border-right: 2px solid white;
+    position: relative;
+    animation: cursor 0.75s step-end infinite, printed_text 5s steps(auto)
+}
+
+.message {
+    margin-top: 20px;
+    width: 741px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    gap: 20px;
+}
+
+.saveContext {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+@media (max-width: 1570px) {
+    .send {
+        left: 75vw
+    }
+}
+
+@media (max-width: 1512px) {
+    .chatInput {
+        width: 44vw;
+        left: 19vw;
+        top: 785px;
+    }
+
+    .send {
+        left: 59vw;
+        top: 800px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .send {
+        left: 70vw
+    }
+
+    .robot {
+        height: 4.5vw;
+        width: 4.5vw;
+    }
+
+    .chatInput {
+        width: 58vw;
+        left: 16vw;
+        top: 785px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .chat {
+        width: 71vw;
+        height: 594px;
+    }
+
+    .message {
+        width: 69vw;
+    }
+
+    .send {
+        left: 69vw;
+    }
+
+    .chatInput {
+        width: 58vw;
+        left: 16vw;
+        top: 785px;
+    }
+
+    .robot {
+        height: 6.5vw;
+        width: 6.5vw;
+    }
+
+    .saveContext {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .chat {
+        width: 443px;
+        height: 594px;
+    }
+
+    .chatInput {
+        width: 64vw;
+    }
+
+
+
+    .checkboxSave {
+        left: 7vw;
+    }
+
+    .headChat {
+        gap: 10px;
+    }
+
+    input {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 530px) {
+    .chatInput {
+        width: 68vw;
+        left: 5vw;
+        top: 745px;
+    }
+
+    .chat-messageuser {
+        margin-right: 5px;
+    }
+
+    .message {
+        width: 80vw;
+    }
+
+    .send {
+        top: 760px;
+        left: 65vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .chat {
+        margin-left: 10px;
+        width: 89vw;
+        height: 694px;
+    }
+
+    .message {
+        width: 87vw;
+    }
+
+    .chatInput {
+        width: 76vw;
+        left: 5vw;
+        top: 845px;
+    }
+
+    .robot {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .ellipse17 {
+        top: 500px;
+    }
+
+    .ellipse18 {
+        top: 360px;
+    }
+
+
+    .send {
+        left: 71vw;
+        top: 860px;
+    }
+}
+
+@media (max-width: 450px) {
+    .chatInput {
+        width: 76vw;
+        left: 5vw;
+        top: 795px;
+    }
+
+    .send {
+        left: 71vw;
+        top: 810px;
+    }
+}
+
+@media (max-width:420px) {
+    .message {
+        width: 80vw;
+    }
+
+    .chat-messageai p {
+        font-size: 14px;
+        width: fit-content;
+        margin-right: 0px;
+    }
+
+    .chat-messageuser p {
+        width: fit-content;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,75 @@
+footer {
+    height: 500px;
+    padding-bottom: 40px;
+    border-top: 1px solid rgb(34, 43, 68);
+    background: radial-gradient(52.00% 103.00% at 50% -3%, rgba(28, 100, 242, 0.5), rgba(8, 16, 39, 0) 70.316%), rgb(18, 24, 37);
+}
+
+
+
+.containerFooter {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 40px;
+    column-gap: 75px;
+    row-gap: 100px;
+}
+
+.defFooter {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.defFooter:hover {
+    color: rgb(71, 133, 255);
+    transition: 0.2s;
+}
+
+.flexDefFooter {
+    display: flex;
+    align-items: center;
+
+    flex-direction: row;
+    gap: 20px;
+    cursor: pointer;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.flexDefFooter:hover {
+    color: rgb(71, 133, 255);
+    transition: 0.2s;
+}
+
+.defFooterNoHover {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    footer {
+        height: 612px;
+    }
+
+    .containerFooter {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 35px;
+        row-gap: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        height: 1316px;
+    }
+
+    .containerFooter {
+        grid-template-columns: 1fr;
+        margin-left: 30px;
+    }
+}
