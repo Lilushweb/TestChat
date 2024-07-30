@@ -193,7 +193,12 @@ span {
         justify-content: start;
     }
 
+    .gptInfo {
+        width: 90vw;
+    }
+
     .gpt {
+        width: 90vw;
         font-size: 36px;
         font-weight: 700;
     }
