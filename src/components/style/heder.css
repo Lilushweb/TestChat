@@ -1,7 +1,7 @@
 header {
     height: 80px;
     width: 100%;
-    position: static;
+    position: fixed;
     backdrop-filter: blur(18px);
     background: rgb(18, 24, 37);
     border-bottom: 1px solid #222b44;
@@ -135,6 +135,7 @@ button {
     width: 94vw;
     height: 506px;
     margin-top: 81px;
+    z-index: 30;
     position: absolute;
     overflow: hidden;
     background: rgb(14, 12, 21);
@@ -257,7 +258,7 @@ button {
 
     header {
         justify-content: start;
-        width: vw;
+
     }
 
     .bot {
