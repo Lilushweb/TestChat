@@ -7,9 +7,7 @@ import OurCapabilities from './OurCapabilities'
 function Main() {
     return (
         <main>
-            <div className='ellipse3'></div>
-            <div className='ellipse4'></div>
-            <div className='ellipse5'></div>
+
             <BgGrid />
             <div className='titleBlock'>
                 <div className='textGpt'>
